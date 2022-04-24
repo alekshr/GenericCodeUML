@@ -1,0 +1,21 @@
+@startuml
+
+package Model <<Folder>>
+{ 
+interface IDisk <T1,T2>
+class Disk
+}
+
+
+
+Disk --> IDisk
+
+
+Disk : - float radius
+Disk : + float GetRadius ()
+Disk : + float GetPloshad (float a, float b)
+IDisk : + float GetRadius ()
+Disk : + event Action OnChange ()
+
+@enduml
+
